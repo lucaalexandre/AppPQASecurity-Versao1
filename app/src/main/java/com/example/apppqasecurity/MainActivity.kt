@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btn_popup.setOnClickListener{
-            val dialogoView = LayoutInflater.from(this).inflate(R.layout.dialogo, null);
+            val dialogoView = LayoutInflater.from(this).inflate(R.layout.activity_dialogo, null);
 
             val builder = AlertDialog.Builder(this)
                 .setView(dialogoView)
@@ -27,6 +27,8 @@ class MainActivity : AppCompatActivity() {
 
 
         }
+
+
 
     }
 }

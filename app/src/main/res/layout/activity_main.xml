@@ -7,9 +7,7 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity"
         android:orientation="vertical"
-        android:padding="16dp"
-        android:background="@color/colorPrimary"
->
+        android:padding="16dp">
 
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
@@ -20,14 +18,30 @@
               android:textStyle="bold"
               android:textColor="@color/colorPrimaryDark"/>
 
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="CPF"
+              android:layout_marginTop="100dp"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+                android:text="Guardar meu CPF"/>
+
+        <Switch android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+     </LinearLayout>
 
     <Button
-            android:text="Entrar"
-            android:layout_width="match_parent"
+            android:text="Continuar"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btn_popup"
-            android:layout_marginTop="250dp"
-            android:background="@color/colorPrimaryDark"/>
+            android:layout_marginTop="25dp"
+            android:background="@color/botao"
+            android:textColor="@color/colorPrimary"/>
 
 
 
